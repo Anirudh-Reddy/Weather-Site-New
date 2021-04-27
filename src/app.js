@@ -20,10 +20,10 @@ app.get('',(req,res)=>{
     res.render('index',{title:'Weather App',footer:'Weather App footer'})
 })
 app.get('/about',(req,res)=>{
-    res.render('about',{title:'Course Name',name:'Node.js',footer:'Weather App footer'})
+    res.render('about',{title:'About',name:'Node.js',footer:'Weather App footer'})
 })
 app.get('/help',(req,res)=>{
-    res.render('help',{title:'Help page',footer:'Weather App footer'})
+    res.render('help',{title:'Help',footer:'Weather App footer'})
 })
 app.get('/weather',(req,res)=>{ 
     if(!req.query.address){
